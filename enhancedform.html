@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ENHANCED-FORM HTML ASSIGNMENT</title>
+</head>
+<body>
+    <header>
+        <h1>ENHANCED-FORM HTML ASSIGNMENT</h1>
+    </header>
+    <main>
+                        <img src="C:\Users\Owner\Desktop\AVI\GND0YbYWEAAwaG2.jfif" alt="AN AVI IMAGE" width="720" height="720">
+                    <video width="720" controls>
+                        <source src="C:\Users\Owner\Videos\20250509160112.mp4" type="video/mp4">
+                        Your browser does not support the video.
+                    </video>
+                    <audio controls>
+                        <source src="C:\Users\Owner\Documents\MUSIC FOLDER\026 Asake_-_Lonely_At_The_Top.mp3" type="audio/mp3">
+                        Your browser does not support the audio.
+                    </audio>
+
+            <h2>Table</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Basic</th>
+                        <th>Standard</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>$499</td>
+                        <td>$999</td>
+                        <td>$1999</td>
+                    </tr>
+                    <tr>
+                        <td>Front End Development</td>
+                        <td>$199</td>
+                        <td>$399</td>
+                        <td>$799</td>
+                    </tr>
+                    <tr>
+                        <td>Backend Development</td>
+                        <td>$299/month</td>
+                        <td>$599/month</td>
+                        <td>$999/month</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Contact Us</h2>
+            
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required 
+                           placeholder="Enter your full name" 
+                           autocomplete="name"
+                           minlength="3"
+                           pattern="[A-Za-z ]+">
+                <br /><br />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required 
+                           placeholder="your.email@example.com"
+                           autocomplete="email">
+
+               
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="123-456-7890"
+                           autocomplete="tel"
+                           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <br /><br />
+
+                    <label for="service">Service Interested In</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="web-dev">Web Development</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="marketing">Digital Marketing</option>
+                        <option value="seo">SEO Optimization</option>
+                    </select>
+                <br /><br />
+
+                    <label for="budget">Budget Range</label>
+                    <input type="range" id="budget" name="budget" min="100" max="5000" step="100" value="1000">
+                    <output for="budget" id="budgetValue">$1000</output>
+             
+                <br /><br />
+
+                    <label for="date">Preferred Contact Date</label>
+                    <input type="date" id="date" name="date" min="2023-01-01">
+
+                <br /><br />
+
+                    <label for="website">Your Website (if any)</label>
+                    <input type="url" id="website" name="website"
+                           placeholder="https://example.com">
+                <br /><br />
+
+                    <label for="message">Your Message*</label>
+                    <textarea id="message" name="message" required 
+                              placeholder="Tell us about your project..."
+                              rows="5"></textarea>
+                <br /><br />
+
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                        Subscribe to our newsletter
+                    </label>
+                <br /><br />
+
+                        <label>
+                            <input type="radio" name="contact-method" value="email" required checked>
+                            Email
+                        </label>
+                        <label>
+                            <input type="radio" name="contact-method" value="phone" required>
+                            Phone
+                        </label>
+                        <label>
+                            <input type="radio" name="contact-method" value="both" required>
+                            Both
+                        </label>
+                 
+                <br /><br />
+
+                    <label for="reference">Reference Number</label>
+                    <input type="text" id="reference" name="reference" 
+                           value="WEB-2023-001" readonly>
+            
+
+                    <button type="submit">Submit Form</button>
+                    <button type="reset">Reset Form</button>
+                
+            </form>
+    </main>
+</html>
